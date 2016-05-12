@@ -33,6 +33,6 @@ public class TestListReversal {
         }
         
         assertEquals("012345", head.toString());
-        assertEquals("543210", LinkedListReverse.reverse(head));
+        assertEquals("543210", LinkedListReverse.reverse(head).toString());
     }
 }

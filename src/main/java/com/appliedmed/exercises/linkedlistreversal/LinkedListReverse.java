@@ -10,6 +10,12 @@ public class LinkedListReverse {
      * @return The contents of the input, reversed.
      */
     public static Node reverse(Node list) {
-        return list;
+	if (list.next==null) {
+	    return list;
+	}
+	Node head = reverse(list.next);
+	list.next.next = list;
+	list.next = null;
+        return head;
     }
 }
